@@ -16,6 +16,9 @@
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
   </head>
   <body>
 
@@ -105,57 +108,46 @@
                           <h2>Projects</h2>
                       </div>
                       <div class="projects-grid">
+                          <!-- Project 1: CAV Autoinsurance Modal -->
                           <div class="project-card">
-                              <a href="https://public.tableau.com/views/CAVAutoinsurance/CavalierDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
-                                  <img src="images/project/Final Project Dashboard.png" class="img-fluid" alt="Tableau Dashboard">
+                              <a href="#" data-toggle="modal" data-target="#cavModal">
+                                  <img src="images/project/Final Project Dashboard.png" class="img-fluid" alt="CAV Autoinsurance">
                                   <div class="project-details">
                                       <h3>Data Science Project</h3>
-                                      <p>Tableau Dashboard CAV Autoinsurance.</p>
+                                      <p>CAV Autoinsurance Project</p>
                                   </div>
                               </a>
                           </div>
+      
+                          <!-- Project 2: Supermarket Shopping Habits Modal -->
                           <div class="project-card">
-                              <a href="https://public.tableau.com/views/CAVAutoinsurance-Storyboard/CavalierStoryboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
-                                  <img src="images/project/Final Project Storyboard.png" class="img-fluid" alt="Tableau Storyboard">
+                              <a href="#" data-toggle="modal" data-target="#supermarketModal">
+                                  <img src="images/project/project4.jpeg" class="img-fluid" alt="Supermarket Dashboard">
                                   <div class="project-details">
                                       <h3>Data Science Project</h3>
-                                      <p>Tableau Story CAV Autoinsurance.</p>
+                                      <p>Supermarket Shopping Habits</p>
                                   </div>
                               </a>
                           </div>
+      
+                          <!-- Project 3: Saudi Used Cars Price Prediction -->
                           <div class="project-card">
                               <a href="https://github.com/shafameidita/saudi-usedcars-price-prediction" target="_blank">
                                   <img src="images/project/project5.jpeg" class="img-fluid" alt="Used Cars Prediction">
                                   <div class="project-details">
                                       <h3>Data Science Project</h3>
-                                      <p>Saudi Arabia Used Cars Price Prediction.</p>
+                                      <p>Saudi Arabia Used Cars Price Prediction</p>
                                   </div>
                               </a>
                           </div>
-                          <div class="project-card">
-                              <a href="https://public.tableau.com/app/profile/shafa.salzabila.meidita/viz/SupermarketShoppingHabitsbyGeneration/SupermarketDashboard" target="_blank">
-                                  <img src="images/project/project4.jpeg" class="img-fluid" alt="Supermarket Dashboard">
-                                  <div class="project-details">
-                                      <h3>Data Science Project</h3>
-                                      <p>Tableau Dashboard Supermarket Shopping Habits by Generation.</p>
-                                  </div>
-                              </a>
-                          </div>
-                          <div class="project-card">
-                              <a href="https://public.tableau.com/app/profile/shafa.salzabila.meidita/viz/SupermarketShoppingHabitsbyGeneration/SupermarketStory" target="_blank">
-                                  <img src="images/project/project3.jpeg" class="img-fluid" alt="Supermarket Story">
-                                  <div class="project-details">
-                                      <h3>Data Science Project</h3>
-                                      <p>Tableau Story Supermarket Shopping Habits by Generation.</p>
-                                  </div>
-                              </a>
-                          </div>
+      
+                          <!-- Project 4: Car Rental CRUD Application -->
                           <div class="project-card">
                               <a href="https://github.com/shafameidita/car-rental-purwadhika-capstone" target="_blank">
                                   <img src="images/project/project1.jpeg" class="img-fluid" alt="Car Rental CRUD">
                                   <div class="project-details">
                                       <h3>Data Science Project</h3>
-                                      <p>Car Rental CRUD Application.</p>
+                                      <p>Car Rental CRUD Application</p>
                                   </div>
                               </a>
                           </div>
@@ -163,7 +155,77 @@
                   </div>
               </div>
           </div>
-      </section>      
+      
+          <!-- Modal 1: CAV Autoinsurance -->
+          <div class="modal fade" id="cavModal" tabindex="-1" aria-labelledby="cavModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content text-center">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="cavModalLabel">CAV Autoinsurance</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <p>Select your preferred view:</p>
+                          <ul>
+                            <li>
+                              <a href="https://github.com/shafameidita/CavalierGroup_DTI_01_FinalProject" target="_blank">
+                                  Github CAV Autoinsurance
+                              </a>
+                          </li>
+                              <li>
+                                  <a href="https://public.tableau.com/views/CAVAutoinsurance/CavalierDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
+                                      Tableau Dashboard CAV Autoinsurance
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://public.tableau.com/views/CAVAutoinsurance-Storyboard/CavalierStoryboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
+                                      Tableau Storyboard CAV Autoinsurance
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Modal 2: Supermarket Shopping Habits -->
+          <div class="modal fade" id="supermarketModal" tabindex="-1" aria-labelledby="supermarketModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content text-center">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="supermarketModalLabel">Supermarket Shopping Habits</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <p>Select your preferred view:</p>
+                          <ul>
+                            <li>
+                              <a href="https://github.com/shafameidita/supermarket-shopping-habits-by-generation" target="_blank">
+                                  Github Supermarket Shopping Habits
+                              </a>
+                          </li>
+                              <li>
+                                  <a href="https://public.tableau.com/app/profile/shafa.salzabila.meidita/viz/SupermarketShoppingHabitsbyGeneration/SupermarketDashboard" target="_blank">
+                                      Tableau Dashboard Supermarket Shopping Habits
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://public.tableau.com/app/profile/shafa.salzabila.meidita/viz/SupermarketShoppingHabitsbyGeneration/SupermarketStory" target="_blank">
+                                      Tableau Storyboard Supermarket Shoping Habits
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      
     
         <!-- Articles -->
         <section class="project py-5" id="Articles">
@@ -387,6 +449,9 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
+     <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   </body>
 </html>
