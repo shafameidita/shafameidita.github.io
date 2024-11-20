@@ -37,3 +37,20 @@
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Ensuring all icons are the same size */
+.social-icon img {
+    width: 30px;  /* Set uniform size for all icons */
+    height: 30px;
+}
+
+/* Reducing the size of the contact info box */
+.contact-info-item {
+    max-width: 300px;  /* Limit the box width */
+}
+
+/* Adding some spacing between the social icons */
+.d-flex {
+    gap: 10px;  /* Space between icons */
+}
+
